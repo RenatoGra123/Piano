@@ -1,0 +1,130 @@
+body{
+     background-color: #333333;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.piano {
+    position: relative;
+    width: 400px;
+    height: 362.5px;
+}
+
+.key {
+    position: absolute;
+    border: 1px solid black;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.white {
+    width: 60px;
+    height: 362.5px;
+    background: white;
+    z-index: 1;
+}
+
+.white:hover, .white.active { 
+    background-color: #ababab;
+}
+
+.black {
+    width: 30px;
+    height: 225px;
+    background: black;
+    z-index: 2;
+}
+
+.black:hover,
+.black.active { /* Adiciona a classe .active para o efeito de clique */
+    background-color: #555;
+}
+
+.nota {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+.nota-tecla-preta{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+.C {
+    left: 0;
+}
+
+.C-sharp {
+    left: 45px;
+}
+
+.D {
+    left: 60px;
+}
+
+.D-sharp {
+    left: 105px;
+}
+
+.E {
+    left: 120px;
+}
+
+.F {
+    left: 180px
+}
+
+.F-sharp {
+    left: 225px;
+}
+
+.G {
+    left: 240px
+}
+
+.G-sharp {
+    left: 285px;
+}
+
+.A {
+    left: 300px
+}
+
+.A-sharp {
+    left: 345px;
+}
+
+.B {
+    left: 360px
+}
+
+.para-direita-1 .key {
+    transform: translateX(420px);
+}
+
+.para-direita-2 .key {
+    transform: translateX(840px);
+}
+
+footer {
+    background-color: #636363;
+    color: var(--text-color);
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border-color);
+    border-radius: 6px;
+}
